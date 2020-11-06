@@ -1,0 +1,16 @@
+version: "2"
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - 8080:80
+    volumes:
+      - ./src:/src
+      - ./site.conf:/etc/nginx/conf.d/default.conf
+  node:
+    image: node:latest
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/src
+    working_dir: /src
