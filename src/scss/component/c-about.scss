@@ -1,0 +1,45 @@
+@import '../foundation/mixin.scss';
+
+.c-about {
+    width: auto;
+    margin: 0 auto;
+    .c-about--myFace {
+        width: 25%;
+        height: 25%;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+    .c-about--item {
+        width: 80%;
+        margin: 0 auto;
+        color: black;
+        @include mq('pc') {
+            width: 35vw
+        }
+        @include mq('tab') {
+            width: 38vw;
+        }
+        @include mq('sp') {
+            width: 75vw;;
+        }
+        p {
+            margin: 0;
+            line-height: 2.2;
+            // letter-spacing: .11em;
+            text-align: left;
+            @include mq('pc') {
+                font-size: 1vw;
+            }
+            @include mq('tab') {
+                font-size: 1.5vw;
+            }
+            @include mq('sp') {
+                font-size: 3vw;
+            }
+        }
+    }
+}

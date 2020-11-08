@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "c-columns.css",
+	"sources": [
+		"../../../scss/component/c-columns.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,UAAU,AAAC,CACP,KAAK,CAAE,IAAI,CACd"
+}

@@ -1,0 +1,22 @@
+@import '../foundation/mixin.scss';
+
+.l-header {
+    position: fixed;
+    z-index: 9999;
+    -webkit-transition: max-height .5s, opacity .5s, background .5s;
+    transition: max-height .5s, opacity .5s, background .5s;
+    overflow: hidden;
+    width: 100%;
+    @include mq('sp') {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    @include mq('tab') {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    @include mq('pc') {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+}

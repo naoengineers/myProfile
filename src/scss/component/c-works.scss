@@ -1,0 +1,24 @@
+@import '../foundation/mixin.scss';
+.c-works {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .c-works--item {
+        margin: 7px;
+        color: black;
+        @include mq('pc') {
+            width: 30vw;
+        } 
+        @include mq('tab') {
+            width: 40vw;
+        }
+        @include mq('sp') {
+            width: 80vw;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

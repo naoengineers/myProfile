@@ -1,0 +1,69 @@
+@import '../foundation/mixin.scss';
+.c-contact {
+    color: black;
+    .c-contact--left {
+        color: black;
+        .fa-envelope {
+            color: black;
+            background:rgb(239, 239, 240);
+            font-size: 25px;
+        }
+        .fa-twitter {
+            color: black;
+            background: rgb(239, 239, 240);
+            font-size: 25px;            
+        }
+        .fa-instagram {
+            color: black;
+            background: rgb(239, 239, 240);
+            font-size: 25px;      
+        }
+        li {
+            float: left;
+            margin-right: 10px;
+            font-size: 13px;
+            list-style: none;
+            cursor: pointer;
+        }
+        p {
+            clear: both;
+            @include mq('pc') {
+                font-size: 1.5vw;
+            }
+            @include mq('tab') {
+                font-size: 1.5vw;
+            }
+            @include mq('sp') {
+                font-size: 1.5vw;
+            }
+        }
+        a {
+            position: relative;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        a:before {
+            content: ""; /*疑似要素の中身は空（記述は必須）*/
+            position: absolute; /*子要素として疑似要素を固定*/
+            left: 0; /*長さはテキストの両端まで*/
+            right: 0; /*長さはテキストの両端まで*/
+            bottom: -5px;  /*線の上下位置*/
+            width: 100%; /*線の長さ*/
+            height: 2px; /*線の太さ*/
+            background-color: #9e9c9c; /*線の色*/
+            transform: scale(0, 1); /*横方向に0状態から全体まで線を入れる*/
+            transform-origin: center; /*中央を起点にアニメーション*/
+            transition: transform .2s; /*アニメーションの時間*/
+        }
+        a:hover:before {
+            transform: scale(1); /*ホバー時に等倍へ拡大*/
+         }
+        .c-contact--icon {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            padding: 2px;
+        }
+    }
+}

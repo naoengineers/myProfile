@@ -1,17 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
     <head>
         <meta http-equiv="content-type" charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="description" content="ポートフォリオサイトです" />
         <meta name="robots" content="noindex,nofollow" />
-        <link rel="stylesheet" type="text/css" href="./dist/css/style.css">
-        <title>nao_porofile</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis:300,400">
+        <link rel="stylesheet" type="text/css" href="/dist/css/foundation/reset.css">
+        <link rel="stylesheet" type="text/css" href="/dist/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/dist/css/layout/l-header.css">
+        <link rel="stylesheet" type="text/css" href="/dist/css/layout/l-footer.css">
+        <link rel="stylesheet" type="text/css" href="/dist/css/layout/l-nav.css">
+        <link rel="stylesheet" type="text/css" href="/dist/css/layout/l-main.css">
+        <link rel="stylesheet" type="text/css" href="/dist/css/component/c-menu.css">
+        <link rel="stylesheet" type="text/css" href="/dist/css/component/c-about.css">
+        <link rel="stylesheet" type="text/css" href="/dist/css/component/c-skill.css">
+        <link rel="stylesheet" type="text/css" href="/dist/css/component/c-works.css">
+        <link rel="stylesheet" type="text/css" href="/dist/css/component/c-title.css">
+        <link rel="stylesheet" type="text/css" href="/dist/css/component/c-contact.css">
+        <link rel="stylesheet" type="text/css" href="/dist/css/component/c-introduction.css">
+        <title>NAOYA TANIMOTO | 谷本　尚哉</title>
     </head>
-    <body>
-        <div>
-            <p>テスト</p>
+    <body id="HOME">
+        <!--ヘッダー-->
+        <header class="l-header">
+            <!--メニューバー-->
+            <div class="l-header--menubox">
+                <nav class="l-nav">
+                    <!-- <div class="c-menu"> -->
+                        <!-- <div class="c-menu--item"><div class="c-menu--border"><a href="#c-title--about">ABOUT</a></div></div>
+                        <div class="c-menu--item"><div class="c-menu--border"><a href="#c-title--skill">SKILL</a></div></div>
+                        <div class="c-menu--item"><div class="c-menu--border"><a href="#c-title--works">WORKS</a></div></div> -->
+                        <!-- <div class="c-menu--item"><a class="c-menu--link" href="#c-title--about">ABOUT</a></div>
+                        <div class="c-menu--item"><a class="c-menu--link" href="#c-title--skill">SKILL</a></div>
+                        <div class="c-menu--item"><a class="c-menu--link" href="#c-title--works">WORKS</a></div>
+                    </div> -->
+                    <ul class="c-menu">
+                        <li class="c-menu--item"><a class="c-menu--link" href="#c-title--about">ABOUT</a></li>
+                        <li class="c-menu--item"><a class="c-menu--link" href="#c-title--skill">SKILL</a></li>
+                        <li class="c-menu--item"><a class="c-menu--link" href="#c-title--works">WORSKS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- タイトル -->
+        <div class="c-introduction">
+            <h1 class="c-introduction--myname">NAOYA TANIMOTO</h1>
+            <p class="c-introduction--profession">- WEB ENNGINEER -</p>
         </div>
+
+        <!-- 自己紹介 -->
+        <div class="l-main">
+            <!-- 経歴紹介 -->
+            <div class="l-main--about">
+                <div class="c-title">
+                    <span class="glyphicon glyphicon-education" style="letter-spacing:5px;"></span> <h3 id="c-title--about">ABOUT</h3>
+                </div>
+                <div class="c-about">
+                    <div class="c-about--myFace">
+                        <img src="./image/profile_image.png" alt="myFaceImage">
+                    </div>
+                    <div class="c-about--item">
+                        <p>
+                            初めまして、Webエンジニアの 「なお」と申します。バックエンドを中心に、Webサイトの制作・Webアプリケーションの作成を行っております。お客様がお持ちの大切な価値を形にすることを第一とし、設計から開発まで対応致します。常にお客様に真摯にかつ柔軟に対応することを心掛け、責任を持って仕事に取り組ませていただきます。お気軽にご相談ください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- スキル紹介 -->
+            <div class="l-main--skill">
+                <div class="c-title">
+                    <span class="glyphicon glyphicon-education" style="letter-spacing:5px;"></span> <h3 id="c-title--skill">SKILL</h3>
+                </div>
+                <div class="c-skill">
+                    <div class="c-skill--item">
+                        <img src="./image/HTML.jpg" alt="frontend languages" />
+                        <p>Level: ★★★★</p>
+                    </div>
+                    <div class="c-skill--item">
+                        <img src="./image/CSS.jpg" alt="frontend languages" />
+                        <p>Level: ★★★</p>
+                    </div>
+                    <div class="c-skill--item">
+                        <img src="./image/github.jpg" alt="frontend languages" />
+                        <p>Level: ★★★★</p>
+                    </div>
+                    <div class="c-skill--item">
+                        <img src="./image/Javascript.jpg" alt="frontend languages" />
+                        <p>Level: ★★★★★</p>
+                    </div>
+                    <div class="c-skill--item">
+                        <img src="./image/Laravel.jpg" alt="frontend languages" />
+                        <p>Level: ★★★★★</p>
+                    </div>
+                    <div class="c-skill--item">
+                        <img src="./image/php.jpg" alt="frontend languages" />
+                        <p>Level: ★★★★★</p>
+                    </div>
+                    <div class="c-skill--item">
+                        <img src="./image/linux-tux.svg" alt="frontend languages" />
+                        <p>Level: ★★★★</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ポートフォリオ -->
+            <div class="l-main--works">
+                <div class="c-title">
+                    <span class="glyphicon glyphicon-education" style="letter-spacing:5px;"></span> <h3 id="c-title--works">WORKS</h3>
+                </div>
+                <div class="c-works">
+                    <div class="c-works--item">
+                        <img src="./image/portfolio1.jpg" alt="frontend languages" />
+                        <p>ポートフォリオ説明</p>
+                    </div>
+                    <div class="c-works--item">
+                        <img src="./image/portfolio2.jpg" alt="frontend languages" />
+                        <p>ポートフォリオ説明</p>
+                    </div>
+                    <div class="c-works--item">
+                        <img src="./image/portfolio3.jpg" alt="frontend languages" />
+                        <p>ポートフォリオ説明</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="l-footer">
+            <div class="l-footer--container">
+                <div class="c-contact">
+                    <div class="c-contact--left">
+                        <ul>
+                            <li class="c-contact--icon">
+                                <a href="mailto:nao.engineers1209@gmail.com?body=ご依頼/ご相談内容" target="blank">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li class="c-contact--icon">
+                                <a href="https://twitter.com/nao_engineers"  target="blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="c-contact--icon">
+                                <a href="https://www.instagram.com/nao_engineers/"  target="blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-contact">
+                    <div class="c-contact--left">
+                        <p>
+                            NAOYA TANIMOTO | 
+                            <a href="mailto:nao.engineers1209@gmail.com?body=ご依頼/ご相談内容" target="blank">nao.engineers1209@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/c84daac96d.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
+

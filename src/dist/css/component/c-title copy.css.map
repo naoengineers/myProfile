@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "c-title copy.css",
+	"sources": [
+		"../../../scss/component/c-title copy.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,UAAU,AAAC,CACP,KAAK,CAAE,KAAK,CACf"
+}

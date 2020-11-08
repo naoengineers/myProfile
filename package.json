@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass src/scss/ --output /src/dist/css/ --output-style compressed --watch --source-map true"
+    "style": "node-sass ./src/scss/ --output ./src/dist/css/ --output-style compressed --watch --source-map true",
+    "foundation": "node-sass ./src/scss/foundation --output ./src/dist/css/foundation --output-style compressed --watch --source-map true",
+    "layout": "node-sass ./src/scss/layout --output ./src/dist/css/layout --output-style compressed --watch --source-map true",
+    "component": "node-sass ./src/scss/component --output ./src/dist/css/component --output-style compressed --watch --source-map true"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +16,9 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",
+    "browserify": "^17.0.0",
+    "jquery": "^3.5.1",
+    "rfs": "^9.0.3",
     "watch": "^1.0.2"
   }
 }

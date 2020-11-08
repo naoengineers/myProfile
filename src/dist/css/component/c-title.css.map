@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "c-title.css",
+	"sources": [
+		"../../../scss/component/c-title.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,QAAQ,AAAC,CACL,SAAS,CAAE,IAAI,CACf,aAAa,CAAE,IAAI,CACnB,UAAU,CAAE,IAAI,CAChB,KAAK,CAAE,KAAK,CACZ,WAAW,CAAE,0GAA0G,CAC1H"
+}
